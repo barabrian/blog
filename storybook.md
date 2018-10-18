@@ -6,7 +6,7 @@ Hefur þú haldið utan um einingasafn með viðmótseiningunum, verið stolt/ur
 
 Þegar maður er að vinna með einingasafn þá er maður annaðhvort að vinna beint í safninu eða inní viðmótinu og færir svo viðmótseininguna yfir í safnið. Vandamálið er oft að viðmótseiningar eru frekar "heimskar" og gera lítið einar á báti, það veldur því að við þurfum að skrifa sérstaka lógík í einingasafnið til að prófa viðmótseininguna. Eða prófa hana í viðmótinu og treysta á að hún virki þegar við nálgumst hana úr safninu.
 
-![fall apart](https://media.giphy.com/media/f1NTdkdbG4XzW/giphy.gif)
+![fall apart](./fall-apart.gif)
 
 Væri ekki gott að vera með vinnuumhverfi þar sem það er ávinningur af því að vinna viðmótseiningar beint í einingasafninu? 
 
@@ -306,7 +306,7 @@ $ hygen init self
 ```
 Þá setur hygen upp generator sniðmát sem þú getum notað til að búa til önnur sniðmát
 
-![Inception](https://media.giphy.com/media/YvX6r2p41Ej0A/giphy.gif)
+![Inception](./inception.gif)
 
 Í okkar tilfelli ætlum við að setja upp generator frá grunni.
 Hygen möppustrúktúr er settur upp "_templates/ nafn á generator / nafn á sniðmáti / sniðmát"
