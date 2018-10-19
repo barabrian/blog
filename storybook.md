@@ -6,6 +6,8 @@ React hefur farið um vefheima eins og eldur í sinu, ný og ný verkefni poppa 
 
 Það sem mig langar að sýna ykkur er hvernig hægt er að nota react og nokkur tól frá samfélaginu til að setja upp einangrað þróunarumhverfi fyrir viðmótseiningar og leið til að sniðmáta endurtekinn kóða til að spara okkur tíma, það vita allir að tími === peningar!
 
+![Money](./money.gif)
+
 Hér á eftir ætlum við að setja upp React verkefni og nota [Storybook.js](https://storybook.js.org/) til að halda utan um viðmótseiningar og skoða nokkrar storybook viðbætur (e. addons).
 
 Svo setjum við upp [Hygen](https://www.hygen.io/) til að sniðmáta endurtekinn kóða, sem í leiðinni leyfir okkur að halda uppi samræmi á uppbyggingu viðmótseininga í verkefninu
