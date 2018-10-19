@@ -1,22 +1,22 @@
 # Einangrað þróunarumhverfi fyrir viðmótseiningar
 
-React hefur farið um vefheima eins og eldur í sinu, ný og ný verkefni poppa upp á hverjum degi og fleiri og fleiri eru að bæta við react í verkfærasettið sitt. Samfélagið hefur stækkað og hægt er að finna npm pakka fyrir flest þekkt viðmótsvandamál. Einnig er hægt að nota react til að skrifa viðmót fyrir allt frá símaforriti yfir í skipunarlínutól.
+React hefur farið um vefheima eins og eldur í sinu, ný og ný verkefni poppa upp á hverjum degi og fleiri og fleiri bæta react við verkfærasettið sitt. React samfélagið hefur stækkað og hægt er að finna npm pakka fyrir flest þekkt vandamál. Einnig er hægt að nota react til að skrifa viðmót fyrir allt frá símaforriti yfir í skipunarlínutól.
 
-Þar sem react er einingasinnað "framework" býður það uppá marga möguleika þegar kemur að tólum til að einfalda okkur skipulag og vinnu.
+Þar sem react er einingasinnað framework býður það uppá marga möguleika þegar kemur að tólum til að auðvelda okkur skipulag og vinnu.
 
-Það sem mig langar að sýna ykkur er hvernig hægt er að nota react og nokkur tól frá samfélaginu til að setja upp einangrað þróunarumhverfi fyrir viðmótseiningar og leið til að sniðmáta endurtekinn kóða til að spara okkur tíma, það vita allir að tími === peningar!
+Það sem mig langar að sýna ykkur er hvernig hægt er að nota react og nokkur önnur tól frá samfélaginu til að setja upp sjálfstætt þróunarumhverfi fyrir viðmótseiningar og leið til að sniðmáta endurtekinn kóða til að spara okkur tíma, það vita allir að tími === peningar!
 
 ![Money](./money.gif)
 
 Hér á eftir ætlum við að setja upp React verkefni og nota [Storybook.js](https://storybook.js.org/) til að halda utan um viðmótseiningar og skoða nokkrar storybook viðbætur (e. addons).
 
-Svo setjum við upp [Hygen](https://www.hygen.io/) til að sniðmáta endurtekinn kóða, sem í leiðinni leyfir okkur að halda uppi samræmi á uppbyggingu viðmótseininga í verkefninu
+Svo setjum við upp [Hygen](https://www.hygen.io/) til að sniðmáta endurtekinn kóða, sem í leiðinni leyfir okkur að viðhalda samræmi þegar kemur að uppbyggingu viðmótseininga í verkefninu
 
 ## Storybook.js
 
-Storybook er síða sem keyrir samhliða verkefninu, og sýnir viðmótseiningar í einangruðu umhverfi. Þar getur þú þróað einingarnar og stillt þeim upp í mismunandi ástandi.
+Storybook er síða sem keyrir samhliða verkefninu, og sýnir viðmótseiningar í einangruðu umhverfi. Þar getur þú þróað einingarnar frá grunni og stillt þeim upp í mismunandi ástandi.
 
-Storybook er með mjög virkt samfélag og helling af [viðbótum](https://storybook.js.org/addons/addon-gallery/). Hér eru nokkrar viðbætur sem ég get mælt með
+Storybook er með mjög virkt samfélag með helling af [viðbótum](https://storybook.js.org/addons/addon-gallery/). Hér eru nokkrar viðbætur sem ég get mælt með:
 
 * [Actions](https://github.com/storybooks/storybook/tree/master/addons/actions)  
   *Sýnir gögn sem skila sér úr event handlerum (sjá sýnishorn í dæminu hér á eftir)*
@@ -48,15 +48,15 @@ $ getstorybook
 $ yarn run storybook
 ```
 
-Nú ættum við að sjá sögubókina á [http://localhost:9009/](http://localhost:9009/)
+Nú ættum við að sjá sögubókina undir [http://localhost:9009/](http://localhost:9009/)
 
 ![Initial storybook](./storybook.png)
 
 ## Stillingar
 
-Áður en við byrjum á fullu er gott að stilla aðeins sögubókina út frá okkar þörfum.
+Áður en við byrjum að fullu er gott að stilla aðeins sögubókina út frá okkar þörfum.
 
-Sjálfgefið þá fáum við stories undir `./src/stories` í okkar tilfelli viljum við hafa söguna í sömu möppu og einingin, þá breytum við `.storybook/config.js`
+Sjálfgefið þá nalgast kerfið sögurnar undir `./src/stories` í okkar tilfelli viljum við hafa söguna í sömu möppu og einingin, þá breytum við `.storybook/config.js`
 
 ```javascript
 import { configure } from '@storybook/react'
@@ -100,7 +100,7 @@ module.exports = {
 
 ## Viðmótseiningar
 
-Þá er næst að gera component möppuna og bæta við fyrsta componentinum okkar.
+Þá er næst að gera components möppuna og stilla upp fyrstu viðmótseiningunni okkar með eftirfarandi kóða.
 ```
 ./src/components/Button/index.js
 ./src/components/Button/Button.js
@@ -156,14 +156,14 @@ storiesOf('Button', module)
 
 Nú erum við komin með fyrstu viðmótseininguna okkar, og ætti þá sögubókin að líta svona út
 
-![First component](./first-component.png)
+![First component](./first-component.png) <-- Kannski hafa útlit sem er ekki með öllum addons
 
 ## Nú getum við farið að nota viðbætur til að gera söguna gagnvirka.
 
 
 ### Actions
 
-Byrjum á því að bæta við Action logger til að sjá click eventið á takkanum
+Byrjum á því að bæta við Action logger til að auðvelda notendum að sjá click eventið á takkanum
 
 `Button.story.js`
 ```javascript
@@ -181,7 +181,7 @@ storiesOf('Button', module)
 
 ### Knobs
 
-Bætum við biðstöðu eiginleika á takkann, og notum svo Knobs til að slökkva og kveikja á biðstöðu.
+Bætum við biðstöðu eiginleika á takkann. Við getum svo notað Knobs til að gera þann eiginleika aðgengilegan notandanum.
 
 Fyrst þurfum við að sækja viðbótina `yarn add -D @storybook/addon-knobs`
 Svo bætum við henni við í `.storybook/addons.js`
@@ -190,7 +190,7 @@ Svo bætum við henni við í `.storybook/addons.js`
 import '@storybook/addon-knobs/register'
 ```
 
-Uppfærum takkann til að taka á móti `isLoading`
+Uppfærum takkann svo hann taki á móti `isLoading`
 
 `Button.js`
 ```javascript
@@ -226,9 +226,9 @@ storiesOf('Button', module)
 
 ### Info
 
-Hvernig væri að henda smá skjölun á þetta?
+Hvernig væri að henda smá skjölun á eininguna svo næsti forritari viti hvernig á að nota hana.
 
-Til þess ætlum við að nota info viðbótið `yarn add -D @storybook/addon-info`
+Til þess ætlum við að nota info viðbótina `yarn add -D @storybook/addon-info`
 
 `Button.story.js`
 ```javascript
@@ -253,7 +253,9 @@ storiesOf('Button', module)
 
 ![Addon-info](./addon-info.gif)
 
-Eins og sést hér fyrir ofan þá er Button ekki með nein propTypes, við skulum bæta þeim við til að skoða props töfluna.
+Eins og sést hér fyrir ofan þá er Button ekki með nein propTypes. PropTypes segir til um þær breytur sem við getum sent inn í eininguna.
+
+Bætum við propType fyrir isLoading svo notandinn átti sig betur á virkni biðstöðu eiginleikans.
 
 Byrjum á að sækja `yarn add prop-types`
 
@@ -284,13 +286,13 @@ export default Button
 
 ![Addon-info](./info-prop-types.gif)
 
-Eins og sést hér á myndinni þá kemur taflan sjálfkrafa inn út frá propTypes á Button og með því að nota `/** comment */` þá er hægt að fylla út í description dálkinn.
+Eins og sést hér á myndinni þá kemur taflan sjálfkrafa inn út frá propTypes á Button og með því að nota `/** comment */` getum við fyllt út í description dálkinn.
 
 ## Hygen
 
-Við erum búin að skoða hvernig við getum bætt Storybook.js við react verkefni. Næst ætlum við að skoða hvernig við getum minnkað endurtekningar með því að nota kóðasmið (e. code generator).
+Við erum búin að skoða hvernig við getum bætt Storybook.js í react verkefni. Næst ætlum við að skoða hvernig við getum minnkað endurtekningar með því að nota kóðasmið (e. code generator).
 
-[Hygen](https://hygen.io) er skipunarlínu tól sem er auðvelt í notkun og býr til kóða út frá sniðmáti (e. template) sem fær að fylgja verkefninu. Sniðmátin eru skrifuð í [EJS](http://ejs.co/) sem þýðir að við getum notað javascript lógík inni í sniðmátinu
+[Hygen](https://hygen.io) er skipunarlínu tól sem er auðvelt í notkun og býr til kóða út frá sniðmáti (e. template) sem við látum fylgja verkefninu. Þetta fyrirkomulag eykur samkvæmni í kóðasafninu okkar. Sniðmátin eru skrifuð í [EJS](http://ejs.co/) sem þýðir að við getum notað javascript lógík inni í sniðmátinu
 
 Til að setja upp hygen þá getum við annaðhvort set það upp "globally"
 ```
@@ -394,7 +396,7 @@ module.exports = [
 
 ```
 
-Hér erum við búin að taka endurtekningarnar út fyrir sviga og fyllum uppí með upplýsingum sem við sækjum úr prompt.js
+Hér erum við búin að taka endurtekningarnar út fyrir sviga ásamt því að veita sveigjanleika með upplýsingum sem við sækjum með prompt.js
 
 Nú getum við prófað að keyra hygen
 
