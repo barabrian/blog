@@ -1,20 +1,14 @@
-# Er allt steindautt í einingasafninu?
+# Einangrað þróunarumhverfi fyrir viðmótseiningar
 
-Hefur þú haldið utan um einingasafn með viðmótseiningunum, verið stolt/ur af skipulagi og hreinleika. Svo daginn eftir að vefurinn er kominn í loftið þá er stílasafnið úrelt?
+React hefur farið um vefheima eins og eldur í sinu, ný og ný verkefni poppa upp á hverjum degi og fleiri og fleiri eru að bæta við react í verkfærasettið sitt. Samfélagið hefur stækkað og hægt er að finna npm pakka fyrir flest þekkt viðmótsvandamál. Einnig er hægt að nota react til að skrifa viðmót fyrir allt frá símaforriti yfir í skipunarlínutól.
 
-Ég kannast við það!
+Þar sem react er einingasinnað "framework" býður það uppá marga möguleika þegar kemur að tólum til að einfalda okkur skipulag og vinnu.
 
-Þegar maður vinnur með einingasafn þá er maður annaðhvort að vinna beint í safninu eða inni í viðmótinu og færir svo viðmótseininguna yfir í safnið. Vandamálið er oft að viðmótseiningar eru frekar "heimskar" og gera lítið einar á báti, það veldur því að við þurfum að skrifa sérstaka lógík í einingasafnið til að prófa viðmótseininguna. Eða prófa hana í viðmótinu og treysta á að hún virki þegar við nálgumst hana úr safninu.
+Það sem mig langar að sýna ykkur er hvernig hægt er að nota react og nokkur tól frá samfélaginu til að setja upp einangrað þróunarumhverfi fyrir viðmótseiningar og leið til að sniðmáta endurtekinn kóða til að spara okkur tíma, það vita allir að tími === peningar!
 
-![fall apart](./fall-apart.gif)
+Hér á eftir ætlum við að setja upp React verkefni og nota [Storybook.js](https://storybook.js.org/) til að halda utan um viðmótseiningar og skoða nokkrar storybook viðbætur (e. addons).
 
-Væri ekki gott að vera með vinnuumhverfi þar sem það er ávinningur af því að vinna viðmótseiningar beint í einingasafninu? 
-
-Við ætlum að skoða hvernig er hægt að auðvelda okkur vinnuna og koma upp skipulögðu einingarsafni.
-
-Hér á eftir ætlum við að setja upp React verkefni og nota [Storybook.js](https://storybook.js.org/) til að halda utan um viðmótseiningar og skoða nokkur storybook addons.
-
-Svo setjum við upp [Hygen](https://www.hygen.io/) til að minnka alla boilerplate vinnu, og halda upp á áreiðanleika
+Svo setjum við upp [Hygen](https://www.hygen.io/) til að sniðmáta endurtekinn kóða, sem í leiðinni leyfir okkur að halda uppi samræmi á uppbyggingu viðmótseininga í verkefninu
 
 ## Storybook.js
 
@@ -263,7 +257,6 @@ Byrjum á að sækja `yarn add prop-types`
 
 `Button.js`
 ```javascript
-...
 import React from 'react'
 import styles from './Button.module.css'
 import propTypes from 'prop-types'
@@ -275,10 +268,16 @@ const Button = ({ children, className, isLoading, ...props }) => {
 }
 
 Button.propTypes = {
+  /** Show button loading state */
   isLoading: propTypes.bool
 }
 
+Button.defaultProps = {
+  isLoading: false
+}
+
 export default Button
+
 ```
 
 ![Addon-info](./info-prop-types.gif)
