@@ -10,7 +10,7 @@ React hefur farið um vefheima eins og eldur í sinu, ný og ný verkefni poppa 
 
 Hér á eftir ætlum við að setja upp React verkefni og nota [Storybook.js](https://storybook.js.org/) til að halda utan um viðmótseiningar og skoða nokkrar storybook viðbætur (e. addons).
 
-Svo setjum við upp [Hygen](https://www.hygen.io/) til að sniðmáta endurtekinn kóða, sem í leiðinni leyfir okkur viðhalda samkvæmni á uppbyggingu viðmótseininga í verkefninu
+Svo setjum við upp [Hygen](https://www.hygen.io/) til að sniðmáta endurtekinn kóða, sem í leiðinni leyfir okkur að viðhalda samkvæmni á uppbyggingu viðmótseininga í verkefninu
 
 ## Storybook.js
 
