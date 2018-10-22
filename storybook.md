@@ -31,7 +31,7 @@ Storybook er með mjög virkt samfélag og helling af [viðbótum](https://story
 
 ## Halló Storybook.js!
 
-Við skulum prófa að henda upp litlu verkefni og tengja okkur inni í sögubókina.
+Við skulum prófa að henda upp litlu verkefni og tengja okkur inn í sögubókina.
 
 Til að auðvelda okkur lífið þá "bootströppum" við verkefnið með [Create React App](https://github.com/facebook/create-react-app)
 
