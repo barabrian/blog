@@ -2,7 +2,7 @@
 
 React hefur farið um vefheima eins og eldur í sinu, ný og ný verkefni poppa upp á hverjum degi og fleiri og fleiri eru að bæta við react í verkfærasettið sitt. Samfélagið hefur stækkað og hægt er að finna npm pakka fyrir flest þekkt viðmótsvandamál. Einnig er hægt að nota react til að skrifa viðmót fyrir allt frá símaforriti yfir í skipunarlínutól.
 
-Þar sem react er einingasinnað "framework" býður það uppá marga möguleika þegar kemur að tólum til að einfalda okkur skipulag og vinnu.
+Þar sem react er einingasinnað "framework" býður það upp á marga möguleika þegar kemur að tólum til að einfalda okkur skipulag og vinnu.
 
 Það sem mig langar að sýna ykkur er hvernig hægt er að nota react og nokkur tól frá samfélaginu til að setja upp einangrað þróunarumhverfi fyrir viðmótseiningar og leið til að sniðmáta endurtekinn kóða til að spara okkur tíma, það vita allir að tími === peningar!
 
