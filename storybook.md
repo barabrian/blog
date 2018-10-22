@@ -410,3 +410,5 @@ Nú getum við prófað að keyra hygen
 * Bæði Storybook og Hygen stækka með verkefninu og verða gagnlegri og verðmætari því meira sem þau eru notuð og uppfærð.
 
 * Sveigjanleiki er einn af stærstu eiginleikum þessara tóla, sem gefur manni kost á að stíla verkefnið algjörlega út frá sínu eigin höfði.
+
+Allan kóða má finna [hér](https://github.com/barabrian/blog/tree/master/storybook)
