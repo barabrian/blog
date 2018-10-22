@@ -10,7 +10,7 @@ React hefur farið um vefheima eins og eldur í sinu, ný og ný verkefni poppa 
 
 Hér á eftir ætlum við að setja upp React verkefni og nota [Storybook.js](https://storybook.js.org/) til að halda utan um viðmótseiningar og skoða nokkrar storybook viðbætur (e. addons).
 
-Svo setjum við upp [Hygen](https://www.hygen.io/) til að sniðmáta endurtekinn kóða, sem í leiðinni leyfir okkur að halda uppi samræmi á uppbyggingu viðmótseininga í verkefninu
+Svo setjum við upp [Hygen](https://www.hygen.io/) til að sniðmáta endurtekinn kóða, sem í leiðinni leyfir okkur að viðhalda samkvæmni á uppbyggingu viðmótseininga í verkefninu
 
 ## Storybook.js
 
@@ -48,7 +48,7 @@ $ getstorybook
 $ yarn run storybook
 ```
 
-Nú ættum við að sjá sögubókina á [http://localhost:9009/](http://localhost:9009/)
+Nú ættum við að sjá sögubókina undir [http://localhost:9009/](http://localhost:9009/)
 
 ![Initial storybook](./storybook.png)
 
@@ -100,7 +100,7 @@ module.exports = {
 
 ## Viðmótseiningar
 
-Þá er næst að gera component möppuna og bæta við fyrsta componentinum okkar.
+Þá er næst að gera components möppuna og bæta við fyrsta componentinum okkar.
 ```
 ./src/components/Button/index.js
 ./src/components/Button/Button.js
@@ -190,7 +190,7 @@ Svo bætum við henni við í `.storybook/addons.js`
 import '@storybook/addon-knobs/register'
 ```
 
-Uppfærum takkann til að taka á móti `isLoading`
+Uppfærum takkann svo hann taki á móti `isLoading`
 
 `Button.js`
 ```javascript
@@ -290,7 +290,7 @@ Eins og sést hér á myndinni þá kemur taflan sjálfkrafa inn út frá propTy
 
 Við erum búin að skoða hvernig við getum bætt Storybook.js við react verkefni. Næst ætlum við að skoða hvernig við getum minnkað endurtekningar með því að nota kóðasmið (e. code generator).
 
-[Hygen](https://hygen.io) er skipunarlínu tól sem er auðvelt í notkun og býr til kóða út frá sniðmáti (e. template) sem fær að fylgja verkefninu. Sniðmátin eru skrifuð í [EJS](http://ejs.co/) sem þýðir að við getum notað javascript lógík inni í sniðmátinu
+[Hygen](https://hygen.io) er skipunarlínu tól sem er auðvelt í notkun og býr til kóða út frá sniðmáti (e. template) sem við látum fylgja verkefninu. Sniðmátin eru skrifuð í [EJS](http://ejs.co/) sem þýðir að við getum notað javascript lógík inni í sniðmátinu
 
 Til að setja upp hygen þá getum við annaðhvort set það upp "globally"
 ```
@@ -401,7 +401,12 @@ Nú getum við prófað að keyra hygen
 ![hygen demo](/hygen-demo.gif)
 
 
-## Conclusion (WIP)
+## Hugleiðingar
 
-* einangrað vinnuumhverfi fyrir viðmótseiningar
-* spara tíma og haldið í vinnureglur
+* Storybook nýtist okkur ekki einungis sem þróunarumhverfi og einingasafn, heldur er mjög góð handbók fyrir alla sem koma að verkefninu.
+
+* Hygen er mjög öflugt verkfæri sem getur flýtt fyrir þegar unnið er með mikið af skjölum sem eru bygð upp með sama ramma. Og er tilvalið til að halda uppi samkvæmni út verkefnið
+
+* Bæði Storybook og Hygen stækka með verkefninu og verða gagnlegri og verðmætari því meira sem þau eru notuð og uppfærð.
+
+* Sveigjanleiki er einn af stærstu eiginleikum þessara tóla, sem gefur manni kost á að stíla verkefnið algjörlega út frá sínu eigin höfði.
